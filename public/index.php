@@ -42,9 +42,9 @@ declare(strict_types=1);
     $repo = new FakeEtudiantRepository();
     $f1 = new Filiere(1, "Informatique");
     echo "<br>";
-    $e1 = new Etudiant(null, "Sara", "sara@test.com", $f1);
+    $e1 = new Etudiant(null, "Sara", "faris@gmail.com", $f1);
     echo "<br>";
-    $e2 = new Etudiant(null, "Youssef", "youssef@test.com", $f1);
+    $e2 = new Etudiant(null, "Youssef", "lyoss@gmail.com", $f1);
 
     $repo->save($e1);
     $repo->save($e2);
@@ -54,7 +54,7 @@ declare(strict_types=1);
         echo $e->getId() . " - " . $e->getNom() . " (" . $e->getFiliere()->getLibelle() . ")\n";
     }
 
-    $e1->setNom("Sara Benali");
+    $e1->setNom("Sara geri");
     $repo->save($e1);
     echo "<br>";
     echo "Modification:\n";
